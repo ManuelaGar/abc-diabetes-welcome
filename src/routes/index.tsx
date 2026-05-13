@@ -3,6 +3,7 @@ import clinicRoom from "@/assets/clinic-room.jpg";
 import drChen from "@/assets/dr-chen.jpg";
 import drThorne from "@/assets/dr-thorne.jpg";
 import drRodriguez from "@/assets/dr-rodriguez.jpg";
+void drRodriguez;
 import patientsPark from "@/assets/patients-park.jpg";
 
 export const Route = createFileRoute("/")({
