@@ -162,7 +162,7 @@ function Index() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-10 md:gap-12">
+            <div className="grid md:grid-cols-2 gap-10 md:gap-12 max-w-5xl">
               {doctors.map((d) => (
                 <article key={d.name} className="group">
                   <div className="overflow-hidden rounded-xl mb-6 ring-1 ring-clinic-teal/10 group-hover:ring-clinic-accent/30 transition-all">
