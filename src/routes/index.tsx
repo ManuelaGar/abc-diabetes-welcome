@@ -54,6 +54,9 @@ function Index() {
           ABC <span className="text-clinic-accent">Diabetes</span>
         </a>
         <div className="hidden md:flex gap-8 items-center text-sm font-medium uppercase tracking-wider">
+          <a href="#about" className="hover:text-clinic-accent transition-colors">
+            Quiénes somos
+          </a>
           <a href="#doctors" className="hover:text-clinic-accent transition-colors">
             Especialistas
           </a>
