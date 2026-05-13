@@ -31,25 +31,18 @@ export const Route = createFileRoute("/")({
 
 const doctors = [
   {
-    name: "Dra. Sarah Chen, MD",
-    role: "Jefa de Endocrinología",
+    name: "Dr. Andrés Palacio",
+    role: "Director Médico · Endocrinología",
     quote:
       "No tratamos números; tratamos personas. Tu estilo de vida es tan importante como tus análisis.",
-    img: drChen,
-  },
-  {
-    name: "Dr. Marcus Thorne, PhD",
-    role: "Especialista en Obesidad",
-    quote:
-      "Acompañamos a cada paciente con planes metabólicos a la medida y la mejor tecnología de monitoreo.",
     img: drThorne,
   },
   {
-    name: "Dra. Elena Rodríguez",
-    role: "Diabetes Gestacional",
+    name: "Dr. José Fernando Botero Arango",
+    role: "Director Médico · Endocrinología",
     quote:
-      "Cuidamos el futuro de madres y bebés con un seguimiento nutricional preciso y cercano.",
-    img: drRodriguez,
+      "Acompañamos a cada paciente con planes metabólicos a la medida y educación terapéutica continua.",
+    img: drChen,
   },
 ];
 
