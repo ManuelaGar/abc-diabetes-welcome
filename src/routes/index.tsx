@@ -2,7 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import clinicRoom from "@/assets/clinic-room.jpg";
 import drChen from "@/assets/dr-chen.jpg";
 import drThorne from "@/assets/dr-thorne.jpg";
-import drRodriguez from "@/assets/dr-rodriguez.jpg";
 import patientsPark from "@/assets/patients-park.jpg";
 
 export const Route = createFileRoute("/")({
@@ -31,25 +30,18 @@ export const Route = createFileRoute("/")({
 
 const doctors = [
   {
-    name: "Dra. Sarah Chen, MD",
-    role: "Jefa de Endocrinología",
+    name: "Dr. Andrés Palacio",
+    role: "Director Médico · Endocrinología",
     quote:
       "No tratamos números; tratamos personas. Tu estilo de vida es tan importante como tus análisis.",
-    img: drChen,
-  },
-  {
-    name: "Dr. Marcus Thorne, PhD",
-    role: "Especialista en Obesidad",
-    quote:
-      "Acompañamos a cada paciente con planes metabólicos a la medida y la mejor tecnología de monitoreo.",
     img: drThorne,
   },
   {
-    name: "Dra. Elena Rodríguez",
-    role: "Diabetes Gestacional",
+    name: "Dr. José Fernando Botero Arango",
+    role: "Director Médico · Endocrinología",
     quote:
-      "Cuidamos el futuro de madres y bebés con un seguimiento nutricional preciso y cercano.",
-    img: drRodriguez,
+      "Acompañamos a cada paciente con planes metabólicos a la medida y educación terapéutica continua.",
+    img: drChen,
   },
 ];
 
@@ -62,6 +54,9 @@ function Index() {
           ABC <span className="text-clinic-accent">Diabetes</span>
         </a>
         <div className="hidden md:flex gap-8 items-center text-sm font-medium uppercase tracking-wider">
+          <a href="#about" className="hover:text-clinic-accent transition-colors">
+            Quiénes somos
+          </a>
           <a href="#doctors" className="hover:text-clinic-accent transition-colors">
             Especialistas
           </a>
@@ -154,6 +149,44 @@ function Index() {
           </div>
         </section>
 
+        {/* Quiénes Somos */}
+        <section id="about" className="px-6 md:px-12 py-20 md:py-28 max-w-[1400px] mx-auto">
+          <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
+            <div className="lg:col-span-5">
+              <p className="text-xs uppercase tracking-widest text-clinic-accent font-bold mb-4">
+                ABC Diabetes SAS
+              </p>
+              <h2 className="font-serif text-4xl md:text-5xl mb-6 text-balance">
+                ¿Quiénes <span className="italic font-light">somos</span>?
+              </h2>
+              <p className="text-clinic-teal/70 leading-relaxed">
+                Empresa colombiana con sede en Medellín, dedicada a la educación terapéutica y a la
+                atención integral de la enfermedad crónica.
+              </p>
+            </div>
+            <ul className="lg:col-span-7 space-y-5 text-base md:text-lg leading-relaxed">
+              {[
+                { k: "Origen", v: "Empresa colombiana con sede en Medellín, constituida en 2022." },
+                { k: "Especialidad", v: "Educación terapéutica y atención de enfermedad crónica." },
+                { k: "Programa oficial", v: "Entrenamiento en bombas de insulina Medtronic (Diabetes Tipo 1)." },
+                { k: "Comunidad", v: "Fundadores y socios de CLID Medellín." },
+                { k: "Directores médicos", v: "Dr. Andrés Palacio y Dr. José Fernando Botero Arango." },
+                { k: "Consulta presencial", v: "Intermedica Medellín, consultorio 1112." },
+              ].map((item) => (
+                <li key={item.k} className="flex gap-5 pb-5 border-b border-clinic-teal/10 last:border-0">
+                  <span className="text-clinic-accent font-serif text-2xl leading-none mt-1">·</span>
+                  <div>
+                    <span className="text-xs uppercase tracking-widest text-clinic-accent font-bold block mb-1">
+                      {item.k}
+                    </span>
+                    <span className="text-clinic-teal/85">{item.v}</span>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
         {/* Doctores */}
         <section id="doctors" className="px-6 md:px-12 py-20 md:py-28 bg-white">
           <div className="max-w-[1400px] mx-auto">
@@ -170,7 +203,7 @@ function Index() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-10 md:gap-12">
+            <div className="grid md:grid-cols-2 gap-10 md:gap-12 max-w-5xl">
               {doctors.map((d) => (
                 <article key={d.name} className="group">
                   <div className="overflow-hidden rounded-xl mb-6 ring-1 ring-clinic-teal/10 group-hover:ring-clinic-accent/30 transition-all">
