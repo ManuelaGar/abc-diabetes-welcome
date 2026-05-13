@@ -146,6 +146,44 @@ function Index() {
           </div>
         </section>
 
+        {/* Quiénes Somos */}
+        <section id="about" className="px-6 md:px-12 py-20 md:py-28 max-w-[1400px] mx-auto">
+          <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
+            <div className="lg:col-span-5">
+              <p className="text-xs uppercase tracking-widest text-clinic-accent font-bold mb-4">
+                ABC Diabetes SAS
+              </p>
+              <h2 className="font-serif text-4xl md:text-5xl mb-6 text-balance">
+                ¿Quiénes <span className="italic font-light">somos</span>?
+              </h2>
+              <p className="text-clinic-teal/70 leading-relaxed">
+                Empresa colombiana con sede en Medellín, dedicada a la educación terapéutica y a la
+                atención integral de la enfermedad crónica.
+              </p>
+            </div>
+            <ul className="lg:col-span-7 space-y-5 text-base md:text-lg leading-relaxed">
+              {[
+                { k: "Origen", v: "Empresa colombiana con sede en Medellín, constituida en 2022." },
+                { k: "Especialidad", v: "Educación terapéutica y atención de enfermedad crónica." },
+                { k: "Programa oficial", v: "Entrenamiento en bombas de insulina Medtronic (Diabetes Tipo 1)." },
+                { k: "Comunidad", v: "Fundadores y socios de CLID Medellín." },
+                { k: "Directores médicos", v: "Dr. Andrés Palacio y Dr. José Fernando Botero Arango." },
+                { k: "Consulta presencial", v: "Intermedica Medellín, consultorio 1112." },
+              ].map((item) => (
+                <li key={item.k} className="flex gap-5 pb-5 border-b border-clinic-teal/10 last:border-0">
+                  <span className="text-clinic-accent font-serif text-2xl leading-none mt-1">·</span>
+                  <div>
+                    <span className="text-xs uppercase tracking-widest text-clinic-accent font-bold block mb-1">
+                      {item.k}
+                    </span>
+                    <span className="text-clinic-teal/85">{item.v}</span>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
         {/* Doctores */}
         <section id="doctors" className="px-6 md:px-12 py-20 md:py-28 bg-white">
           <div className="max-w-[1400px] mx-auto">
