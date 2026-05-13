@@ -2,6 +2,8 @@
 @source "../src";
 @import "tw-animate-css";
 
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,400..900&family=Inter:wght@300..700&display=swap");
+
 @custom-variant dark (&:is(.dark *));
 
 /*
@@ -19,6 +21,12 @@
  */
 
 @theme inline {
+  --font-serif: 'Fraunces', ui-serif, Georgia, serif;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --color-clinic-teal: var(--clinic-teal);
+  --color-clinic-mint: var(--clinic-mint);
+  --color-clinic-accent: var(--clinic-accent);
+  --color-clinic-cream: var(--clinic-cream);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -63,14 +71,18 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --clinic-teal: oklch(0.36 0.045 188);
+  --clinic-mint: oklch(0.95 0.018 180);
+  --clinic-accent: oklch(0.68 0.16 55);
+  --clinic-cream: oklch(0.99 0.008 85);
+  --background: var(--clinic-cream);
+  --foreground: var(--clinic-teal);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
+  --card-foreground: var(--clinic-teal);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
+  --popover-foreground: var(--clinic-teal);
+  --primary: var(--clinic-teal);
+  --primary-foreground: var(--clinic-cream);
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);
   --muted: oklch(0.968 0.007 247.896);
