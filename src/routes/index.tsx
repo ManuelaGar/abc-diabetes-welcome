@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import clinicRoom from "@/assets/clinic-room.jpg";
-import drChen from "@/assets/dr-chen.jpg";
-import drThorne from "@/assets/dr-thorne.jpg";
+import drPalacio from "@/assets/dr-palacio.jpg";
+import drBotero from "@/assets/dr-botero.jpg";
 import patientsPark from "@/assets/patients-park.jpg";
 
 export const Route = createFileRoute("/")({
@@ -34,14 +34,14 @@ const doctors = [
     role: "Director Médico · Endocrinología",
     quote:
       "No tratamos números; tratamos personas. Tu estilo de vida es tan importante como tus análisis.",
-    img: drThorne,
+    img: drPalacio,
   },
   {
     name: "Dr. José Fernando Botero Arango",
     role: "Director Médico · Endocrinología",
     quote:
       "Acompañamos a cada paciente con planes metabólicos a la medida y educación terapéutica continua.",
-    img: drChen,
+    img: drBotero,
   },
 ];
 
