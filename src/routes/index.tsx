@@ -164,26 +164,31 @@ function Index() {
                 atención integral de la enfermedad crónica.
               </p>
             </div>
-            <ul className="lg:col-span-7 space-y-5 text-base md:text-lg leading-relaxed">
-              {[
-                { k: "Origen", v: "Empresa colombiana con sede en Medellín, constituida en 2022." },
-                { k: "Especialidad", v: "Educación terapéutica y atención de enfermedad crónica." },
-                { k: "Programa oficial", v: "Entrenamiento en bombas de insulina Medtronic (Diabetes Tipo 1)." },
-                { k: "Comunidad", v: "Fundadores y socios de CLID Medellín." },
-                { k: "Directores médicos", v: "Dr. Andrés Palacio y Dr. José Fernando Botero Arango." },
-                { k: "Consulta presencial", v: "Intermedica Medellín, consultorio 1112." },
-              ].map((item) => (
-                <li key={item.k} className="flex gap-5 pb-5 border-b border-clinic-teal/10 last:border-0">
-                  <span className="text-clinic-accent font-serif text-2xl leading-none mt-1">·</span>
-                  <div>
-                    <span className="text-xs uppercase tracking-widest text-clinic-accent font-bold block mb-1">
-                      {item.k}
-                    </span>
-                    <span className="text-clinic-teal/85">{item.v}</span>
-                  </div>
-                </li>
-              ))}
-            </ul>
+            <div className="lg:col-span-7 space-y-8">
+              <p className="text-base md:text-lg leading-relaxed text-clinic-teal/85 italic border-l-2 border-clinic-accent pl-6">
+                Nuestro programa de atención está centrado en el cuidado del paciente y su familia con un equipo dedicado a la atención, acompañamiento y educación. En cada consulta serás acompañado por un endocrinólogo, un médico general entrenado, una nutricionista, un químico farmacéutico, una enfermera profesional y un psicólogo que te ayudarán, a ti y a tu grupo familiar, a entender como es vivir con diabetes y a alcanzar las metas del tratamiento para que mejorar tu calidad de vida.
+              </p>
+              <ul className="space-y-5 text-base md:text-lg leading-relaxed">
+                {[
+                  { k: "Origen", v: "Empresa colombiana con sede en Medellín, constituida en 2022." },
+                  { k: "Especialidad", v: "Educación terapéutica y atención de enfermedad crónica." },
+                  { k: "Programa oficial", v: "Entrenamiento en bombas de insulina Medtronic (Diabetes Tipo 1)." },
+                  { k: "Comunidad", v: "Fundadores y socios de CLID Medellín." },
+                  { k: "Directores médicos", v: "Dr. Andrés Palacio y Dr. José Fernando Botero Arango." },
+                  { k: "Consulta presencial", v: "Cl 7 39 197, Edificio intermedica, Consultorio 1112, Medellín, Antioquia." },
+                ].map((item) => (
+                  <li key={item.k} className="flex gap-5 pb-5 border-b border-clinic-teal/10 last:border-0">
+                    <span className="text-clinic-accent font-serif text-2xl leading-none mt-1">·</span>
+                    <div>
+                      <span className="text-xs uppercase tracking-widest text-clinic-accent font-bold block mb-1">
+                        {item.k}
+                      </span>
+                      <span className="text-clinic-teal/85">{item.v}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </section>
 
