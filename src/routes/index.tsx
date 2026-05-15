@@ -311,8 +311,10 @@ function Index() {
           >
             Agenda tu valoración inicial
           </a>
-          <p className="mt-10 text-clinic-teal/50 text-sm">
-            Atención virtual y presencial · (+57) 320 681 6213 · Cl 7 39 197, Edificio intermedica, Consultorio 1112, Medellín, Antioquia
+          <p className="mt-10 text-clinic-teal/50 text-sm leading-relaxed">
+            (+57) 320 681 6213
+            <br />
+            Cl 7 39 197, Edificio intermedica, Consultorio 1112, Medellín, Antioquia
           </p>
         </section>
       </main>
