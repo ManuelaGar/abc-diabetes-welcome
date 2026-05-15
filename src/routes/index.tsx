@@ -304,20 +304,22 @@ function Index() {
             ¿Listo para comenzar tu camino?
           </h2>
           <a
-            href="mailto:hola@abcdiabetes.clinic"
+            href="https://wa.me/573206816213"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-clinic-teal text-clinic-cream px-10 py-4 rounded-full text-base md:text-lg font-medium hover:bg-clinic-accent transition-colors"
           >
             Agenda tu valoración inicial
           </a>
           <p className="mt-10 text-clinic-teal/50 text-sm">
-            Atención virtual y presencial · hola@abcdiabetes.clinic · (503) 555-0192
+            Atención virtual y presencial · (+57) 320 681 6213 · Cl 7 39 197, Edificio intermedica, Consultorio 1112, Medellín, Antioquia
           </p>
         </section>
       </main>
 
       <footer className="border-t border-clinic-teal/10 px-6 md:px-12 py-8 text-xs text-clinic-teal/50 flex flex-wrap justify-between gap-4">
+        <span>ABC Diabetes S.A.S · NIT 901655498-6</span>
         <span>© {new Date().getFullYear()} Clínica ABC Diabetes. Todos los derechos reservados.</span>
-        <span>Centro clínico autorizado</span>
       </footer>
     </div>
   );
