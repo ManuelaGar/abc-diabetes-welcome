@@ -41,7 +41,7 @@ const doctors = [
     role: "Director Médico · Endocrinología",
     quote:
       "Acompañamos a cada paciente con planes metabólicos a la medida y educación terapéutica continua.",
-    img: drChen,
+    img: drBotero,
   },
 ];
 
