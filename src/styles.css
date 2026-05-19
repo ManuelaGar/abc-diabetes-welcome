@@ -71,10 +71,11 @@
 
 :root {
   --radius: 0.625rem;
-  --clinic-teal: oklch(0.36 0.045 188);
-  --clinic-mint: oklch(0.95 0.018 180);
-  --clinic-accent: oklch(0.68 0.16 55);
-  --clinic-cream: oklch(0.99 0.008 85);
+  /* ABC Diabetes brand palette (2023 manual) */
+  --clinic-teal: oklch(0.28 0.10 268);    /* navy #223265 - primary */
+  --clinic-mint: oklch(0.85 0.09 155);    /* mint #93D8AC */
+  --clinic-accent: oklch(0.73 0.13 175);  /* teal #4DC2A8 */
+  --clinic-cream: oklch(0.985 0.005 95);  /* warm off-white */
   --background: var(--clinic-cream);
   --foreground: var(--clinic-teal);
   --card: oklch(1 0 0);
