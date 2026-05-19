@@ -52,8 +52,8 @@ function Index() {
     <div className="min-h-screen bg-clinic-cream font-sans text-clinic-teal">
       {/* Navegación */}
       <nav className="flex justify-between items-center px-6 md:px-12 py-6 md:py-8">
-        <a href="#top" className="text-2xl font-serif font-bold tracking-tight">
-          ABC <span className="text-clinic-accent">Diabetes</span>
+        <a href="#top" className="flex items-center">
+          <img src={logoMono} alt="ABC Diabetes" className="h-14 md:h-16 w-auto" />
         </a>
         <div className="hidden md:flex gap-8 items-center text-sm font-medium uppercase tracking-wider">
           <a href="#about" className="hover:text-clinic-accent transition-colors">
