@@ -3,6 +3,8 @@ import clinicRoom from "@/assets/clinic-room.jpg";
 import drPalacio from "@/assets/dr-palacio.jpg";
 import drBotero from "@/assets/dr-botero.jpg";
 import patientsPark from "@/assets/patients-park.jpg";
+import logoMono from "@/assets/logo-abc-mono.png";
+import logoNavy from "@/assets/logo-abc-navy.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
