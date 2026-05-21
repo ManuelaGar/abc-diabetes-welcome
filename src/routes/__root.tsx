@@ -84,6 +84,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:description", content: "ABC Diabetes Hub: A clinic landing page showcasing doctors, specialties, and patient testimonials." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/30e084a5-b594-4f62-b83c-a36eb838f868/id-preview-6e015149--16b09c04-8a11-4981-b7cb-5e1e257cb82f.lovable.app-1778707317700.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/30e084a5-b594-4f62-b83c-a36eb838f868/id-preview-6e015149--16b09c04-8a11-4981-b7cb-5e1e257cb82f.lovable.app-1778707317700.png" },
+      { name: "facebook-domain-verification", content: "tza6dw278lmvkc66j4ig77bbm8ftll" },
     ],
     links: [
       {
