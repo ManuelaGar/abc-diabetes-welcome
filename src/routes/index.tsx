@@ -278,7 +278,7 @@ function Index() {
               <div className="p-8 bg-clinic-mint text-clinic-teal rounded-2xl">
                 <div className="text-clinic-accent text-2xl mb-4 tracking-tighter">★★★★★</div>
                 <p className="font-medium mb-6 leading-relaxed">
-                  "La telemedicina realmente funciona. Me siento acompañada por el equipo de ABC Diabetes incluso
+                  "La telemedicina realmente funciona. Me siento acompañado por el equipo de ABC Diabetes incluso
                   cuando viajo por trabajo."
                 </p>
                 <div className="text-sm font-bold uppercase tracking-wider">Jaime T.</div>
