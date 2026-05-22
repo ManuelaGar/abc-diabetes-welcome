@@ -2,9 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import clinicRoom from "@/assets/clinic-room.jpg";
 import drPalacio from "@/assets/dr-palacio.jpg";
 import drBotero from "@/assets/dr-botero.jpg";
-import patientsPark from "@/assets/patients-park.jpg";
-import logoMono from "@/assets/logo-abc-mono.png";
-import logoNavy from "@/assets/logo-abc-navy.png";
+import patientsCommunity from "@/assets/patients-community.png";
+import logoAbc01 from "@/assets/logo-abc-01.png";
+import logoAbc02 from "@/assets/logo-abc-02.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -53,7 +53,7 @@ function Index() {
       {/* Navegación */}
       <nav className="flex justify-between items-center px-6 md:px-12 py-6 md:py-8">
         <a href="#top" className="flex items-center">
-          <img src={logoMono} alt="ABC Diabetes" className="h-14 md:h-16 w-auto" />
+          <img src={logoAbc01} alt="ABC Diabetes" className="h-14 md:h-16 w-auto" />
         </a>
         <div className="hidden md:flex gap-8 items-center text-sm font-medium uppercase tracking-wider">
           <a href="#about" className="hover:text-clinic-accent transition-colors">
@@ -285,8 +285,8 @@ function Index() {
               </div>
               <div className="sm:col-span-2 overflow-hidden rounded-2xl ring-1 ring-clinic-cream/10">
                 <img
-                  src={patientsPark}
-                  alt="Una pareja caminando en un parque soleado, representando una vida saludable"
+                  src={patientsCommunity}
+                  alt="Tres mujeres descansando en un parque después de hacer ejercicio, representando bienestar y comunidad"
                   width={1440}
                   height={512}
                   loading="lazy"
@@ -322,7 +322,7 @@ function Index() {
       </main>
 
       <footer className="bg-clinic-teal text-clinic-cream px-6 md:px-12 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
-        <img src={logoNavy} alt="ABC Diabetes" className="h-20 w-auto" />
+        <img src={logoAbc02} alt="ABC Diabetes" className="h-20 w-auto" />
         <div className="text-xs text-clinic-cream/70 text-center md:text-right space-y-1">
           <div className="font-bold text-clinic-cream">ABC Diabetes S.A.S · NIT 901655498-6</div>
           <div>© {new Date().getFullYear()} Clínica ABC Diabetes. Todos los derechos reservados.</div>
