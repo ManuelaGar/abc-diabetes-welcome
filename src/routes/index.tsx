@@ -324,8 +324,10 @@ function Index() {
       <footer className="bg-clinic-teal text-clinic-cream px-6 md:px-12 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
         <img src={logoAbc02} alt="ABC Diabetes" className="h-20 w-auto" />
         <div className="text-xs text-clinic-cream/70 text-center md:text-right space-y-1">
-          <div className="font-bold text-clinic-cream">ABC Diabetes S.A.S · NIT 901655498-6</div>
-          <div>© {new Date().getFullYear()} Clínica ABC Diabetes. Todos los derechos reservados.</div>
+          <div className="font-bold text-clinic-cream">ABC Diabetes S.A.S · NIT 901665498-6</div>
+          <div>Cl 7 #39-197 Consultorio 1112, Medellín, Antioquia</div>
+          <div>(+57) 320 681 6213</div>
+          <div>© {new Date().getFullYear()}. Todos los derechos reservados.</div>
         </div>
       </footer>
     </div>
