@@ -9,6 +9,36 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import appleTouchIcon from "../assets/favicon/apple-touch-icon.png?url";
+import favicon96 from "../assets/favicon/favicon-96x96.png?url";
+import faviconIco from "../assets/favicon/favicon.ico?url";
+import faviconSvg from "../assets/favicon/favicon.svg?url";
+import webAppManifest192 from "../assets/favicon/web-app-manifest-192x192.png?url";
+import webAppManifest512 from "../assets/favicon/web-app-manifest-512x512.png?url";
+
+const siteWebManifest = `data:application/manifest+json,${encodeURIComponent(
+  JSON.stringify({
+    name: "ABC Diabetes",
+    short_name: "ABC",
+    icons: [
+      {
+        src: webAppManifest192,
+        sizes: "192x192",
+        type: "image/png",
+        purpose: "maskable",
+      },
+      {
+        src: webAppManifest512,
+        sizes: "512x512",
+        type: "image/png",
+        purpose: "maskable",
+      },
+    ],
+    theme_color: "#ffffff",
+    background_color: "#ffffff",
+    display: "standalone",
+  }),
+)}`;
 
 function NotFoundComponent() {
   return (
@@ -90,6 +120,30 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         rel: "stylesheet",
         href: appCss,
+      },
+      {
+        rel: "icon",
+        href: favicon96,
+        type: "image/png",
+        sizes: "96x96",
+      },
+      {
+        rel: "icon",
+        href: faviconSvg,
+        type: "image/svg+xml",
+      },
+      {
+        rel: "shortcut icon",
+        href: faviconIco,
+      },
+      {
+        rel: "apple-touch-icon",
+        href: appleTouchIcon,
+        sizes: "180x180",
+      },
+      {
+        rel: "manifest",
+        href: siteWebManifest,
       },
     ],
   }),
