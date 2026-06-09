@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Instagram } from "lucide-react";
 import clinicRoom from "@/assets/clinic-room.jpg";
 import drPalacio from "@/assets/dr-palacio.jpg";
 import drBotero from "@/assets/dr-botero.jpg";
@@ -327,6 +328,15 @@ function Index() {
           <div className="font-bold text-clinic-cream">ABC Diabetes S.A.S · NIT 901665498-6</div>
           <div>Cl 7 #39-197 Consultorio 1112, Medellín, Antioquia</div>
           <div>(+57) 320 681 6213</div>
+          <a
+            href="https://www.instagram.com/abcdiabetes.co/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center md:justify-end gap-2 hover:text-clinic-accent transition-colors"
+          >
+            <Instagram className="size-4" aria-hidden="true" />
+            <span>@abcdiabetes.co</span>
+          </a>
           <div>© {new Date().getFullYear()}. Todos los derechos reservados.</div>
         </div>
       </footer>
