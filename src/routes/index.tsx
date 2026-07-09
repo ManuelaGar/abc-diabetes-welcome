@@ -178,7 +178,7 @@ function Index() {
                   { k: "Programa oficial", v: "Entrenamiento en bombas de insulina Medtronic (Diabetes Tipo 1)." },
                   { k: "Comunidad", v: "Fundadores y socios de CLID Medellín." },
                   { k: "Directores médicos", v: "Dr. Andrés Palacio y Dr. José Fernando Botero Arango." },
-                  { k: "Consulta presencial", v: "Cl 7 #39-197, Edificio intermedica, Consultorio 1112, Medellín, Antioquia." },
+                  { k: "Consulta presencial", v: "Calle 7 #39-197, Edificio intermedica, Consultorio 1112, Medellín, Antioquia." },
                 ].map((item) => (
                   <li key={item.k} className="flex gap-5 pb-5 border-b border-clinic-teal/10 last:border-0">
                     <span className="text-clinic-accent font-serif text-2xl leading-none mt-1">·</span>
@@ -317,7 +317,7 @@ function Index() {
           <p className="mt-10 text-clinic-teal/50 text-sm leading-relaxed">
             (+57) 320 681 6213
             <br />
-            Cl 7 #39-197, Edificio intermedica, Consultorio 1112, Medellín, Antioquia
+            Calle 7 #39-197, Edificio intermedica, Consultorio 1112, Medellín, Antioquia
           </p>
         </section>
       </main>
@@ -325,8 +325,8 @@ function Index() {
       <footer className="bg-clinic-teal text-clinic-cream px-6 md:px-12 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
         <img src={logoAbc02} alt="ABC Diabetes" className="h-20 w-auto" />
         <div className="text-xs text-clinic-cream/70 text-center md:text-right space-y-1">
-          <div className="font-bold text-clinic-cream">ABC Diabetes S.A.S · NIT 901665498-6</div>
-          <div>Cl 7 #39-197 Consultorio 1112, Medellín, Antioquia</div>
+          <div className="font-bold text-clinic-cream">ABC Diabetes SAS · NIT 901665498-6</div>
+          <div>Calle 7 #39-197 Consultorio 1112, Medellín, Antioquia</div>
           <div>(+57) 320 681 6213</div>
           <a
             href="https://www.instagram.com/abcdiabetes.co/"
